@@ -1,0 +1,23 @@
+{
+    "name": "AdSkipper",
+    "version": "0.1.0",
+    "description": "",
+    "manifest_version": 3,
+    "author": "Juuso Turunen",
+    "action":{
+        "default_title": "AdSkipper"
+    },
+    "permissions": [
+        "scripting",
+        "activeTab"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "commands": {
+        "skipAd": {
+          "suggested_key": "Alt+X",
+          "description": "Skip an ad in YouTube"
+        }
+    }
+}
